@@ -1,0 +1,408 @@
+pp<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>morgenmete</title>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <li style="list-style: none;">
+          <a href=""></a>
+            <img
+              class="menu-icon"
+              onclick="openMenu()"
+              src="./images/menu_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+              /></a>
+            </li>
+            <img class="header-logo-media" src="./images/header-logo.svg" alt="" />
+        <div class="header-content">
+          <img class="header-logo" src="./images/header-logo.svg" alt="" />
+          <img
+            class="close-icon"
+            onclick="closeMenu()"
+            src="./images/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />
+          <ul class="header-list">
+            <li class="items"><a class="a-link" href="https://www.morgenmete.com/">home</a></li>
+            <li class="items"><a class="a-link" href="https://www.morgenmete.com/features">features</a></li>
+            <li class="items"><a class="a-link" href="https://www.morgenmete.com/shop">shop</a></li>
+            <li class="items cart-item">
+              <ion-icon name="bag-outline"></ion-icon
+              ><a class="cart" href="">cart</a>
+            </li>
+          </ul>
+          <div class="cart-box">
+            <div class="cart-box-content">
+              <h3 class="cart-title">Your Cart</h3>
+              
+             <li onclick="closeCart()" class="close-cart">
+               <ion-icon name="close-outline"></ion-icon>
+             </li> 
+          </div>
+
+          <p class="cart-text">no items found</p>
+        </div>
+        
+        
+        
+      </nav>
+      <li onclick="openCart()" class="cart"><img src="./images/icons8-0-circled-26.png" alt="" class="cart-item-media"></li>
+
+
+
+      <div class="header-addtion">
+        <h2>The Always Connected Issue</h2>
+        <button class="header-btn">
+          <a href="https://www.morgenmete.com/product/issue-02" class="btn"
+            >buy now</a
+          >
+        </button>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="container-summary">
+        <p class="container-text">
+          <u>Morgenmete</u> is a print journal
+          <br />
+          exploring the absurdity of life through <br />
+          the setting of <u>breakfast</u>.
+        </p>
+
+        <p class="container-text-media">
+          <u>Morgenmete</u> is a print <br />
+          journal exploring the<br />
+          absurdity of life <br />
+          through the setting of<br />
+          <u>breakfast</u>.
+        </p>
+        <img src="./images/container-img.svg" alt="" class="container-img" />
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="features-content">
+        <h2 class="features-title">Features</h2>
+        <a href="https://www.morgenmete.com/features">
+          <button class="features-btn">view all features</button>
+        </a>
+      </div>
+
+      <div class="three-boxes">
+        <div class="first-box">
+          <img src="./images/first-box-img.webp" alt="" class="first-box-img" />
+          <p class="box-name">short feature</p>
+          <h3 class="box-title">
+            Waffle House Meets<br />
+            Menu Hacks
+          </h3>
+          <p class="box-text">by time lamp</p>
+          <p class="box-describe">
+            TikTokers wanted menu hacks.In Waffle house,<br />the met thrie
+            match
+          </p>
+
+          <p class="box-describe-media">
+            TikTokers wanted menu hacks.In<br />
+            Waffle house,the met thrie match
+          </p>
+
+          <button class="box-btn">
+            <a
+              href="https://www.morgenmete.com/features/waffle-house-wont-entertain-your-menu-hacks"
+              class="a-btn"
+              >read article <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </button>
+        </div>
+
+        <!-- ***********************SECOND BOX********************** -->
+
+        <div class="first-box">
+          <img
+            src="./images/second-box-img.webp"
+            alt=""
+            class="first-box-img"
+          />
+          <p class="box-name">long feature</p>
+          <h3 class="box-title">
+            To All the Beans I've<br />
+            Loved Before
+          </h3>
+          <p class="box-text">by Georgette eva</p>
+          <p class="box-describe">
+            A midiation on coffee beansand morning coffee<br />
+            rituals in early pandemic life.
+          </p>
+
+          <p class="box-describe-media">
+            A midiation on coffee beans and <br />morning coffee rituals in
+            early pandemic life.
+          </p>
+          <button class="box-btn">
+            <a
+              href="https://www.morgenmete.com/features/to-all-the-beans-ive-loved-before"
+              class="a-btn"
+              >read article <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </button>
+        </div>
+
+        <!-- ******************************THIRD BOX************************* -->
+
+        <div class="first-box third-box-media">
+          <img src="./images/third-box-img.webp" alt="" class="first-box-img" />
+          <p class="box-name">Q&A</p>
+          <h3 class="box-title">Boss Barista: Pouring<br />Out the Turth</h3>
+          <p class="box-text">by tess malone</p>
+          <p class="box-describe describe">
+            A Q&A with Ashley Rodriquez of Boss Barista
+          </p>
+
+          <button class="box-btn">
+            <a
+              href="https://www.morgenmete.com/features/boss-barista"
+              class="a-btn"
+              >read article <ion-icon name="arrow-forward-outline"></ion-icon
+            ></a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="moving-bar">
+      <p>
+        THE MOST IMPORTANT MEAL OF THE DAY
+        <ion-icon class="pizza-icon" name="pizza-outline"></ion-icon>
+        THE MOST IMPORTANT MEAL OF THE DAY
+        <ion-icon class="pizza-icon" name="pizza-outline"></ion-icon>
+      </p>
+    </section>
+
+    <section class="issue">
+      <div class="issue-content">
+        <h2 class="issue-title">issue 02</h2>
+        <button class="issue-btn">
+          <a class="a-btn" href="https://www.morgenmete.com/product/issue-02"
+            >buy now</a
+          >
+        </button>
+      </div>
+
+      <p class="issue-summary">
+        This issue believes the best lens to view our connected culture is
+        around the <br />breakfast table, and we hope you do too. Bring your
+        hopes, frustrations,<br />
+        and curiosities about our connected world to play.
+      </p>
+    </section>
+
+    <section class="slider">
+      <div class="slider-track">
+        <div class="slide">
+          <img
+            onclick="currentSlide(1)"
+            class="issue-twin-img"
+            src="./images/issue-twin-images.webp"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            onclick="currentSlide(2)"
+            class="slide-change issue-single-img"
+            src="./images/issue-box-header.webp"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            onclick="currentSlide(3)"
+            class="issue-twin-img"
+            src="./images/egg.webp"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            onclick="currentSlide(4)"
+            class="issue-twin-img"
+            src="./images/third-twin.webp"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            onclick="currentSlide(5)"
+            class="issue-twin-img"
+            src="./images/fourth-twin-boxes.webp"
+            alt=""
+          />
+        </div>
+
+        <div class="slide">
+          <img
+            onclick="currentSlide(6)"
+            class="issue-twin-img"
+            src="./images/fourth-twin-slice.webp"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- <div class="buttons">
+          <button class="previous" onclick="plusSlides(-1)">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"
+                />
+              </svg>
+            </a>
+          </button>
+          <button class="next" onclick="plusSlides(1)">
+            <a href="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#000000"
+              >
+                <path
+                  d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"
+                />
+              </svg>
+            </a>
+          </button>
+      </div> -->
+    </section>
+
+    <section class="breakfast">
+      <div class="breakfast-content">
+        <img src="./images/breakfast-img.svg" alt="" class="breakfast-img" />
+
+        <div class="breakfast-summary">
+          <h2 class="breakfast-title">breakfast digest</h2>
+          <p class="breakfast-text">
+            We send out a sometimes-weekly email chock full of breakfast
+            insights, guest<br />
+            essays and hot takes.Sign up for our always free newsletter.
+          </p>
+
+          <div class="information">
+            <input
+              type="text"
+              class="breakfast-input"
+              placeholder="example@gmail.com"
+            />
+            <button class="breakfast-btn">
+              <a class="a-btn" href="">subscribe</a>
+            </button>
+          </div>
+
+          <a href="https://morgenmete.substack.com/">
+            <p class="breakfast-resource">
+              I'D LIKE TO PREVIEW IT FIRST (Takea preview!)
+              <img class="stars" src="./images/icons8-stars-48.png" alt="" />
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="moving-bar">
+      <p>
+        THE MOST IMPORTANT MEAL OF THE DAY
+        <ion-icon class="pizza-icon" name="pizza-outline"></ion-icon>
+        THE MOST IMPORTANT MEAL OF THE DAY
+        <ion-icon class="pizza-icon" name="pizza-outline"></ion-icon>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2 class="footer-title">
+          Exploring the absurdity <br />of life through the<br />
+          setting of breakfast.
+        </h2>
+
+        <div class="footer-part">
+          <ul class="footer-list">
+            <h4 class="list-title">Navigation:</h4>
+            <li class="footer-items">
+              <a href="https://www.morgenmete.com/" class="a-item">home</a>
+            </li>
+            <li class="footer-items">
+              <a href="https://www.morgenmete.com/features" class="a-item"
+                >feature</a
+              >
+            </li>
+            <li class="footer-items">
+              <a href="https://www.morgenmete.com/about" class="a-item"
+                >about</a
+              >
+            </li>
+            <li class="footer-items">
+              <a href="https://www.morgenmete.com/about#contact" class="a-item"
+                >contact us</a
+              >
+            </li>
+            <li class="footer-items">
+              <a href="https://www.morgenmete.com/submit" class="a-item"
+                >submit</a
+              >
+            </li>
+            <li class="footer-items">
+              <a href="https://www.morgenmete.com/stockists" class="a-item"
+                >stokists</a
+              >
+            </li>
+          </ul>
+
+          <div class="footer-communication">
+            <h4 class="list-title text-left">Follow us:</h4>
+
+            <div class="social">
+              <a href="">
+                <ion-icon class="x-platform" name="close-outline"></ion-icon>
+              </a>
+              <a href="">
+                <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+              </a>
+
+              <a href="https://morgenmete.substack.com/">
+                <ion-icon class="saved" name="bookmark-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="./images/footer-gallery.svg" alt="" class="footer-gallery" />
+    </footer>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
